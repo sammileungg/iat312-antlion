@@ -14,5 +14,7 @@ public class CameraRunnerScript : MonoBehaviour {
 	{
 		transform.position = new Vector3(player.position.y + 0, 0, -10);
 		/// the second 0 can be altered according to the camera's original displacement with the player's original y position)
+		/// 
+		/// test test maurice - oct 1st
 	}
 }
