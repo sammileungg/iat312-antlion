@@ -14,6 +14,13 @@ public class HUDScript : MonoBehaviour {
 		playerScore += Time.deltaTime;
 	}
 
+	/// bringing the score to the gameover screen
+	void OnDisable()
+	{
+		///store the score in player preferences to the next scene
+		PlayerPrefs.SetInt("Score", (int)(playerScore * 100));
+	}
+
 	/// draw the score
 	void OnGUI()
 	{
